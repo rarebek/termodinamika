@@ -169,12 +169,11 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
 .work .k{font:500 12px var(--mono);color:var(--hot);margin-top:2vh;letter-spacing:.06em}
 
 /* --- heat balance --- */
-.donut{position:relative;width:min(46vh,34vw);aspect-ratio:1;margin:0 auto}
-.donut svg{width:100%;height:100%;transform:rotate(-90deg)}
-.donut circle.seg{fill:none;stroke-width:4;stroke-linecap:butt;stroke-dasharray:0 100;transition:stroke-dasharray 1.8s var(--ease);transition-delay:calc(var(--k)*.25s + .6s);filter:drop-shadow(0 0 1.2px currentColor)}
-.on .donut circle.seg{stroke-dasharray:var(--len) 100}
-.donut .mid{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
-.donut .mid .big{font-size:clamp(60px,7vw,130px)}
+.lam{padding:3.4vh 2vw}
+.lam .bars{gap:2vh;margin-top:2.4vh}
+.lam .bars .b{grid-template-columns:9vw 1fr 4.4vw;font-size:13px}
+.src{position:absolute;left:8vw;right:8vw;bottom:72px;font:400 11px/1.4 var(--mono);color:var(--dim);letter-spacing:.03em}
+.src:before{content:"Manba: ";color:var(--gold)}
 .legend{display:grid;gap:1.6vh;margin-top:3vh}
 .legend div{display:grid;grid-template-columns:14px 11vw 4vw 1fr;gap:1vw;align-items:center;font-size:clamp(12px,.95vw,16px);color:var(--mut)}
 .legend i{width:12px;height:12px;border-radius:3px}
@@ -252,31 +251,33 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
   <div class="kick" data-r>Amaliyot-7 · Mavzu</div>
   <h1><span class="chars">Termodinamika</span><span class="l2 chars">qonunlarining</span><span class="l3" data-r>tirik organizmlarga tadbiqi</span></h1>
   <div class="row">
-    <p class="lede" data-r>Hayot energiyani qayerdan oladi, uni qanday <b>ishga</b> aylantiradi va nega oxir-oqibat hammasi <b>issiqlik</b> bo‘lib chiqib ketadi — fizika qonunlari tilida.</p>
+    <p class="lede" data-r>«Termodinamika — energiyani bir turdan ikkinchi turga o‘tishini, ya’ni <b>energiya transformatsiyasini</b> o‘rganadigan fizikaning bo‘limidir.»</p>
     <div style="display:grid;gap:14px;justify-items:end">
-      <div class="chip" data-r><i></i>2 soat · Amaliy mashg‘ulot</div>
+      <div class="chip" data-r><i></i>Amaliy mashg‘ulot · 2 soat</div>
       <div class="start" data-r><kbd>→</kbd> yoki <kbd>Space</kbd> davom etish · <kbd>F</kbd> to‘liq ekran</div>
     </div>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika». T.: Cho‘lpon, 2013 — 6.1-§</div>
 </section>
 
 <!-- 02 PLAN -->
 <section class="slide" data-mode=".8" data-glow=".55" data-t="34.2" data-name="Reja">
-  <div class="kick" data-r>Mashg‘ulot rejasi</div>
-  <h2 data-r>Ikki savol — <em>bitta</em> qonuniyat</h2>
+  <div class="kick" data-r>Amaliyot-7</div>
+  <h2 data-r>Mashg‘ulot <em>rejasi</em></h2>
   <div class="plan">
-    <div class="p glass" data-r><div class="n">01</div><h3>Termometriya va kalorimetriya</h3><p class="lede" style="margin-top:1.4vh;font-size:clamp(13px,1vw,17px)">Haroratni qanday o‘lchaymiz va organizm ajratgan issiqlikni qanday hisoblaymiz.</p></div>
-    <div class="p glass" data-r><div class="n">02</div><h3>Tibbiyotda issiq va sovuq muhitlardan davolash maqsadida foydalanish</h3><p class="lede" style="margin-top:1.4vh;font-size:clamp(13px,1vw,17px)">Termoterapiya va krioterapiyaning fizik asoslari.</p></div>
+    <div class="p glass" data-r><div class="n">01</div><h3>Termometriya va kalorimetriya.</h3></div>
+    <div class="p glass" data-r><div class="n">02</div><h3>Tibbiyotda issiq va sovuq muxitlardan davolash maqsadida foydalanish.</h3></div>
   </div>
   <div class="topics">
-    <span class="chip" data-r><i></i>Energiya manbalari</span>
-    <span class="chip" data-r><i></i>Erkin va bog‘langan energiya</span>
-    <span class="chip" data-r><i></i>I va II qonun</span>
-    <span class="chip" data-r><i></i>Ish bajarish usullari</span>
-    <span class="chip" data-r><i></i>Issiqlik balansi</span>
+    <span class="chip" data-r><i></i>Tirik organizmda energiya manbalari</span>
+    <span class="chip" data-r><i></i>Erkin va bog‘langan energiyalar</span>
+    <span class="chip" data-r><i></i>Termodinamikaning birinchi, ikkinchi qonunlari</span>
+    <span class="chip" data-r><i></i>Erkin energiya manbalari va ish bajarish usullari</span>
+    <span class="chip" data-r><i></i>Issiqlik balansi tenglamasi</span>
     <span class="chip" data-r><i></i>Prigojin teoremasi</span>
-    <span class="chip" data-r><i></i>Energiya turlarining almashinishi</span>
+    <span class="chip" data-r><i></i>Energiya turlari va o‘zaro almashinish usullari</span>
   </div>
+  <div class="src">Fan o‘quv dasturi, Amaliyot-7 · Adabiyot: AA: 1, 2, 3 · QA: 1, 3, 4</div>
 </section>
 
 <!-- 03 THERMOMETRY -->
@@ -284,17 +285,15 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
   <div class="cols">
     <div>
       <div class="kick" data-r>01 · Termometriya</div>
-      <h2 data-r>Haroratni <em>o‘lchash</em></h2>
-      <p class="lede" data-r style="margin-top:3vh">Harorat — molekulalar issiqlik harakati o‘rtacha kinetik energiyasining o‘lchovi. Fermentlar faqat tor harorat oralig‘ida ishlaydi, shuning uchun u — <b>hayotiy parametr</b>.</p>
-      <div class="eqs" data-r>
-        <span class="f">T = t + 273,15</span>
-        <span class="f" style="color:var(--gold)">t<sub>°F</sub> = 1,8·t + 32</span>
-      </div>
+      <h2 data-r>Termo<em>metriya</em></h2>
+      <p class="lede" data-r style="margin-top:3vh">Termometriya — amaliy fizika va metrologiyaning bir bo‘limi bo‘lib, <b>haroratni o‘lchash usullari va vositalarini</b> ishlab chiqishga bag‘ishlangan.</p>
+      <p class="lede" data-r style="margin-top:1.6vh">Haroratni bevosita o‘lchash mumkin emas. Uning o‘zgarishi jismlarning boshqa xususiyatlari — hajm, bosim, elektr qarshiligi, termo-EYuK, nurlanish intensivligi bilan baholanadi.</p>
       <div class="list" data-r>
-        <div><b>Suyuqlikli</b><span>simob, spirt — issiqlikdan hajmiy kengayish</span></div>
-        <div><b>Termorezistor</b><span>qarshilik haroratga bog‘liq: R = R₀(1 + αΔt)</span></div>
-        <div><b>Termojuft</b><span>ikki xil metall kavshari — termo-EYuK ∝ ΔT</span></div>
-        <div><b>Infraqizil</b><span>kontaktsiz: nurlanish quvvati ∝ T⁴ (Stefan–Bolsman)</span></div>
+        <div><b>Hajmli</b><span>suyuqlik yoki gaz hajmining o‘zgarishini o‘lchaydi</span></div>
+        <div><b>Dilatometrik</b><span>qattiq jismlarning chiziqli kengayishi bilan baholanadi</span></div>
+        <div><b>Termoelektrik</b><span>datchigi — termojuft; harorat farqida termo-e.yu.k paydo bo‘ladi</span></div>
+        <div><b>Qarshilik</b><span>o‘tkazgich yoki termistor qarshiligining o‘zgarishi</span></div>
+        <div><b>Kontaktsiz</b><span>nurlanish intensivligini masofadan o‘lchaydi</span></div>
       </div>
     </div>
     <div class="thermo">
@@ -311,12 +310,14 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
         <line x1="20" x2="100" y1="110" y2="110" stroke="#ffcf5c" stroke-dasharray="3 4"/>
       </svg>
       <div class="readout" data-r>
-        <div class="tag">Qo‘ltiq osti · norma</div>
-        <div class="big"><span data-count="36.6" data-dec="1">0</span><small>°C</small></div>
-        <div class="tag" style="margin-top:1vh">oraliq 36,4 – 36,9 °C</div>
+        <div class="tag">Normal tana harorati · o‘rtacha</div>
+        <div class="big"><span data-count="36.5" data-dec="1">0</span><small>°C</small></div>
+        <div class="tag" style="margin-top:1vh">36,5 – 37,0 °C</div>
+        <p class="lede" style="font-size:clamp(12px,.9vw,15px);margin-top:1.6vh;max-width:24ch">37 °C dan yuqoriligi — subfebril yoki patologik holat bo‘lishi mumkin.</p>
       </div>
     </div>
   </div>
+  <div class="src">O‘zME (uz.wikipedia): «Termometriya» · «Termometriya va kalorimetriya» taqdimoti (soff.uz)</div>
 </section>
 
 <!-- 04 CALORIMETRY -->
@@ -324,78 +325,77 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
   <div class="cols" style="grid-template-columns:1fr auto">
     <div>
       <div class="kick" data-r>01 · Kalorimetriya</div>
-      <h2 data-r>Issiqlikni <em>tortish</em></h2>
+      <h2 data-r>Kalori<em>metriya</em></h2>
     </div>
     <div class="f" data-r style="font-size:clamp(48px,6vw,118px)">Q = c·m·Δ<span style="color:var(--gold)">T</span></div>
   </div>
   <div class="cal">
     <div class="card glass" data-r>
-      <div class="tag">To‘g‘ri kalorimetriya</div>
-      <h4>Kamera ichida</h4>
-      <p>Odam germetik kamerada bo‘ladi; u ajratgan issiqlik devorlar orqali oqayotgan suvning isishidan bevosita o‘lchanadi (Atvoter–Benedikt kamerasi).</p>
+      <div class="tag">Ta’rif</div>
+      <h4>Issiqlikni o‘lchash</h4>
+      <p>Kalorimetriya (lot. calor — issiqlik) — turli fizik, kimyoviy va biologik jarayonlarda sodir bo‘ladigan issiqlik effektlari (issiqlik miqdorlari)ni o‘lchash usullari majmui.</p>
+      <p style="margin-top:1.2vh">Issiqlik miqdorini bevosita o‘lchash uchun ishlatiladigan asboblar <b style="color:var(--gold)">kalorimetrlar</b> deyiladi.</p>
     </div>
     <div class="card glass" data-r>
-      <div class="tag">Bilvosita kalorimetriya</div>
-      <h4>Nafas orqali</h4>
-      <p>Sarflangan O₂ va ajralgan CO₂ hajmidan hisoblanadi. 1 l O₂ ga <b style="color:var(--gold)">≈ 20 kJ</b> (≈ 4,8 kkal) energiya to‘g‘ri keladi.</p>
-      <div class="bars">
-        <div class="tag" style="margin-bottom:.4vh">Nafas koeffitsienti · V(CO₂)/V(O₂)</div>
-        <div class="b" style="--k:0"><span>Uglevod</span><span class="t"><i style="--w:100%"></i></span><span>1,0</span></div>
-        <div class="b" style="--k:1"><span>Oqsil</span><span class="t"><i style="--w:80%"></i></span><span>0,8</span></div>
-        <div class="b" style="--k:2"><span>Yog‘</span><span class="t"><i style="--w:70%"></i></span><span>0,7</span></div>
-      </div>
+      <div class="tag">Biokalorimetriya</div>
+      <h4>Organizmda</h4>
+      <p>Biologiyada biokalorimetriya yordamida organizmda bo‘lib turadigan kimyoviy va fizik jarayonlardagi issiqlik effektlari aniqlanadi.</p>
+      <p style="margin-top:1.2vh">Organizm qabul qilgan va ajratgan issiqlikni taqqoslash <b style="color:var(--gold)">Gess qonuniga</b> asosan amalga oshiriladi. Gess qonuni oziq-ovqatlar kaloriyaliligini aniqlashda ishlatiladi.</p>
     </div>
     <div class="card glass" data-r>
-      <div class="tag">Kaloriya qiymati · 1 g uchun</div>
-      <h4>Oziq yoqilg‘isi</h4>
+      <div class="tag">Kaloriyalilik · MJ/kg</div>
+      <h4>Oziq moddalar</h4>
       <div class="bars">
-        <div class="b" style="--k:3"><span>Uglevod</span><span class="t"><i style="--w:44%"></i></span><span>17,2</span></div>
-        <div class="b" style="--k:4"><span>Oqsil</span><span class="t"><i style="--w:44%"></i></span><span>17,2</span></div>
-        <div class="b" style="--k:5"><span>Yog‘</span><span class="t"><i style="--w:100%"></i></span><span>38,9</span></div>
+        <div class="b" style="--k:0"><span>Oqsil</span><span class="t"><i style="--w:62%"></i></span><span>24,3</span></div>
+        <div class="b" style="--k:1"><span>Uglevod</span><span class="t"><i style="--w:45%"></i></span><span>17,6</span></div>
+        <div class="b" style="--k:2"><span>Yog‘</span><span class="t"><i style="--w:100%"></i></span><span>38,9</span></div>
       </div>
-      <p style="margin-top:1.6vh">kJ/g. Yog‘ — eng zich energiya zahirasi.</p>
+      <p style="margin-top:1.6vh">Shular hisobida organizmda issiqlik muvozanati saqlanadi.</p>
     </div>
   </div>
+  <div class="src">O‘zME (uz.wikipedia): «Kalorimetriya» · Ismailov E. va b. «Biofizika», 2013 — 6.1-§, 6.6-§</div>
 </section>
 
 <!-- 05 ENERGY SOURCES -->
 <section class="slide" data-mode="1" data-glow=".9" data-t="38.2" data-name="Energiya manbalari">
   <div class="kick" data-r>Tirik organizmda energiya manbalari</div>
-  <h2 data-r>Quyoshdan — <em>mushakkacha</em></h2>
+  <h2 data-r>Energiya <em>manbalari</em></h2>
   <div class="chain">
     <div class="wire"></div><div class="spark"></div>
-    <div class="node" data-r><div class="o">hν</div><h5>Quyosh</h5><p>Yerdagi barcha biologik energiyaning birlamchi manbai</p></div>
-    <div class="node" data-r><div class="o">Ф</div><h5>Fotosintez</h5><p>6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</p></div>
-    <div class="node" data-r><div class="o">C</div><h5>Oziq moddalar</h5><p>uglevod, yog‘, oqsil — kimyoviy bog‘ energiyasi</p></div>
-    <div class="node" data-r><div class="o">O₂</div><h5>Oksidlanish</h5><p>hujayra nafasi, mitoxondriyalar</p></div>
-    <div class="node" data-r><div class="o">ATF</div><h5>ATF</h5><p>hujayraning universal energiya «valyutasi»</p></div>
-    <div class="node" data-r><div class="o">A</div><h5>Ish + Q</h5><p>mexanik, kimyoviy, osmotik, elektr ish va issiqlik</p></div>
+    <div class="node" data-r><div class="o">hν</div><h5>Quyosh</h5><p>o‘simliklarda birlamchi energiya manbayi</p></div>
+    <div class="node" data-r><div class="o">Ф</div><h5>Fotosintez</h5><p>organik moddalarning sintezi</p></div>
+    <div class="node" data-r><div class="o">C</div><h5>Oziq moddalar</h5><p>oqsil, uglevod va yog‘larning hazm bo‘lishida energiya ajraladi</p></div>
+    <div class="node" data-r><div class="o">O₂</div><h5>Oksidlanish</h5><p>C₆H₁₂O₆ + 6O₂ = 6CO₂ + 6H₂O + 2870 kJ</p></div>
+    <div class="node" data-r><div class="o">ATF</div><h5>ATF</h5><p>sintezi mitoxondriya membranasida bo‘ladi</p></div>
+    <div class="node" data-r><div class="o">Q</div><h5>Ish + issiqlik</h5><p>ortiqcha issiqlik tashqariga chiqariladi</p></div>
   </div>
   <div class="atp glass" data-r>
-    <span class="f">ATF + H₂O → ADF + F<sub>n</sub></span>
-    <div style="white-space:nowrap"><div class="tag">ΔG°′</div><div class="big" style="font-size:clamp(48px,5vw,96px);color:var(--gold)">−<span data-count="30.5" data-dec="1">0</span><small style="font-size:.26em;color:var(--mut);font-family:var(--mono);letter-spacing:0;margin-left:.4em">kJ/mol</small></div></div>
-    <p class="lede" style="font-size:clamp(13px,1vw,17px)">Hayvon organizmi — <b>geterotrof</b>: energiyani faqat oziq moddalardan oladi. 1 mol glyukoza to‘liq oksidlanganda ≈ 2870 kJ ajraladi va ≈ 30–32 ATF hosil bo‘ladi.</p>
+    <span class="f">ATF + H₂O = ADF + H₃PO₄ + Q</span>
+    <div style="white-space:nowrap"><div class="tag">Bog‘lanish buzilishida</div><div class="big" style="font-size:clamp(48px,5vw,96px);color:var(--gold)">25–33<small style="font-size:.26em;color:var(--mut);font-family:var(--mono);letter-spacing:0;margin-left:.4em">kJ/mol</small></div></div>
+    <p class="lede" style="font-size:clamp(13px,1vw,17px)">Tirik organizmda energiyaning hosil bo‘lishi murakkab biokimyoviy birikmalarda yuz beradi. Ulardan eng asosiysi — <b>adenozintrifosfat kislota (ATF)</b>. Oddiy murakkab efirlarning gidrolizida esa atigi 8–12 kJ/mol energiya chiqadi.</p>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 6.6-§, (6.15), (6.16)</div>
 </section>
 
 <!-- 06 FREE / BOUND -->
 <section class="slide" data-mode=".75" data-glow=".5" data-t="31.4" data-name="Erkin va bog‘langan energiya">
   <div class="cols" style="grid-template-columns:1fr auto">
-    <div><div class="kick" data-r>Erkin va bog‘langan energiya</div><h2 data-r>Hamma energiya <em>ish</em> bajarmaydi</h2></div>
+    <div><div class="kick" data-r>Erkin va bog‘langan energiyalar</div><h2 data-r>Erkin va <em>bog‘langan</em></h2></div>
     <div class="f" data-r style="font-size:clamp(52px,6.4vw,124px)">U = <span style="color:var(--gold)">F</span> + <span style="color:var(--ice)">TS</span></div>
   </div>
   <div class="split" data-r>
     <div class="bar2"><div class="fe">F — erkin</div><div class="be">TS — bog‘langan</div></div>
     <div class="cap">
-      <p><b>Erkin energiya F = U − TS</b> — ichki energiyaning ishga aylanishi mumkin bo‘lgan qismi. Organizm aynan shu qism hisobiga yashaydi.</p>
-      <p style="text-align:right"><b>Bog‘langan energiya TS</b> — tartibsiz issiqlik harakatiga «qamalgan» qism. U ish bajarmaydi, faqat issiqlik bo‘lib tarqaladi.</p>
+      <p><b>Erkin energiya</b> — termodinamik tizimning holatini ifodalovchi termodinamik potensiallardan biri. <b>Gelmgols energiyasi (F)</b> — mexanik ish bilan bir qatorda mexanik bo‘lmagan ishlarni bajarish qobiliyati.</p>
+      <p style="text-align:right"><b>Entropiya</b> energiyaning qaytmas tarqalishi yoki energiyaning samarasizligi o‘lchovini bildiradi, chunki tizimning barcha energiyasini foydali ishga aylantirib bo‘lmaydi.</p>
     </div>
   </div>
   <div class="gibbs glass" data-r>
     <span class="f">G = H − TS</span>
-    <div class="mono"><b>ΔG &lt; 0</b> — jarayon o‘z-o‘zidan boradi (ekzergonik): oksidlanish, ATF gidrolizi.</div>
-    <div class="mono"><b style="color:var(--ice)">ΔG &gt; 0</b> — energiya sarfi kerak (endergonik): biosintez, faol transport, mushak qisqarishi.</div>
+    <div class="mono"><b>Ichki energiya (U)</b> — ish bajarish qobiliyati va issiqlik chiqarish qobiliyati.</div>
+    <div class="mono"><b style="color:var(--ice)">Gibbs energiyasi (G)</b> — mexanik bo‘lmagan ishlarni bajarish qobiliyati.</div>
   </div>
+  <div class="src">O‘zME (uz.wikipedia): «Erkin energiya», «Termodinamik potensiallar», «Entropiya»</div>
 </section>
 
 <!-- 07 FIRST LAW -->
@@ -404,25 +404,31 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
     <div>
       <div class="kick" data-r>Termodinamikaning birinchi qonuni</div>
       <div class="eq" data-r>Q = Δ<em>U</em> + A</div>
-      <p class="lede" data-r style="margin-top:3vh">Energiya yo‘qdan paydo bo‘lmaydi va yo‘qolmaydi — faqat bir turdan boshqasiga o‘tadi. Organizm ham <b>bu qonundan istisno emas</b>.</p>
+      <p class="lede" data-r style="margin-top:3vh">«Tizimga berilgan issiqlik miqdori tizimning <b>ichki energiyasining o‘zgarishiga</b> va tizim <b>bajaradigan ishga</b> ketadi.»</p>
       <div class="terms" data-r>
-        <div><span>Q</span><span>oziq moddalar bilan olingan energiya</span></div>
-        <div><span>ΔU</span><span>organizmda zahiraga o‘tgan energiya (glikogen, yog‘)</span></div>
-        <div><span>A</span><span>bajarilgan ish va tashqariga chiqarilgan issiqlik</span></div>
+        <div><span>ΔU</span><span>ichki energiya — tizimni tashkil etuvchi zarralarning kinetik va potensial energiyalari yig‘indisi</span></div>
+        <div><span>A</span><span>tizim bajaradigan ish</span></div>
       </div>
+      <p class="lede" data-r style="margin-top:3vh;font-size:clamp(13px,1vw,17px)">Mayer birinchi marta termodinamikaning birinchi qonunini tirik organizmga qo‘llash mumkinligini aytgan va shu bilan <b>bioenergetikaga asos soldi</b>.</p>
     </div>
-    <div style="display:grid;gap:1.6vw">
-      <div class="stat glass" data-r>
-        <div class="tag">Atvoter – Benedikt tajribalari</div>
-        <div class="big">&lt;<span data-count="1" data-dec="0">0</span>%</div>
-        <p class="lede" style="font-size:clamp(13px,1vw,17px)">Kalorimetrik kamerada odamning sutkalik energiya sarfi va oziq energiyasi orasidagi farq — o‘lchash xatoligi darajasida.</p>
+    <div class="stat glass" data-r>
+      <div class="tag">6.1-jadval · Odam organizmi issiqlik muvozanati</div>
+      <div style="display:flex;gap:3vw;align-items:end;margin-top:2vh">
+        <div><div class="tag">Kelishi</div><div class="big" style="font-size:clamp(56px,6vw,110px)"><span data-count="7873" data-dec="0">0</span></div></div>
+        <div><div class="tag">Sarfi</div><div class="big" style="font-size:clamp(56px,6vw,110px);color:var(--fg)"><span data-count="7788" data-dec="0">0</span></div></div>
+        <div class="tag" style="padding-bottom:1.4vh">kJ</div>
       </div>
-      <div class="stat glass" data-r>
-        <div class="tag">Gess qonuni</div>
-        <p class="lede" style="font-size:clamp(13px,1vw,17px);margin-top:1.2vh">Oziq modda organizmda bosqichma-bosqich oksidlanadimi yoki kalorimetrda yonadimi — ajralgan energiya <b>bir xil</b>: u yo‘lga emas, boshlang‘ich va oxirgi holatga bog‘liq.</p>
+      <div class="bars" style="margin-top:2.4vh">
+        <div class="b" style="--k:0"><span>Yog‘lar</span><span class="t"><i style="--w:70%"></i></span><span>5476</span></div>
+        <div class="b" style="--k:1"><span>Uglevod</span><span class="t"><i style="--w:18%"></i></span><span>1404</span></div>
+        <div class="b" style="--k:2"><span>Oqsil</span><span class="t"><i style="--w:13%"></i></span><span>993</span></div>
+        <div class="b" style="--k:3"><span>Issiqlik</span><span class="t"><i style="--w:73%"></i></span><span>5757</span></div>
+        <div class="b" style="--k:4"><span>Bug‘lanish</span><span class="t"><i style="--w:12%"></i></span><span>951</span></div>
+        <div class="b" style="--k:5"><span>Nafas</span><span class="t"><i style="--w:10%"></i></span><span>758</span></div>
       </div>
     </div>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 6.1-jadval, (6.1), 6.6-§</div>
 </section>
 
 <!-- 08 SECOND LAW -->
@@ -430,33 +436,38 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
   <div class="cols" style="grid-template-columns:1fr 1.1fr">
     <div>
       <div class="kick" data-r>Termodinamikaning ikkinchi qonuni</div>
-      <h2 data-r>Tartib <em>narxi</em></h2>
-      <div class="eqs" data-r><span class="f">dS ≥ δQ / T</span></div>
-      <p class="lede" data-r style="margin-top:2.4vh">Izolyatsiyalangan tizimda entropiya faqat ortadi. Organizm esa — <b>ochiq tizim</b>:</p>
-      <div class="eqs" data-r><span class="f" style="color:var(--gold)">dS = d<sub>e</sub>S + d<sub>i</sub>S</span></div>
-      <div class="terms" data-r style="margin-top:2.4vh">
-        <div><span>d<sub>i</sub>S</span><span>&gt; 0 — ichki qaytmas jarayonlar entropiya hosil qiladi</span></div>
-        <div><span>d<sub>e</sub>S</span><span>&lt; 0 — tartibli oziq kiradi, tartibsiz issiqlik va chiqindi chiqadi</span></div>
+      <h2 data-r>Ikkinchi <em>qonun</em></h2>
+      <div class="terms" data-r style="margin-top:3vh">
+        <div><span>1</span><span><b style="color:var(--fg)">Klauzius ta’rifi:</b> issiqlik o‘z-o‘zidan harorati past jismdan harorati yuqori bo‘lgan jismga o‘ta olmaydi.</span></div>
+        <div><span>2</span><span><b style="color:var(--fg)">Tomson ta’rifi:</b> ikkinchi tur abadiy dvigatel bo‘lishi mumkin emas.</span></div>
+      </div>
+      <p class="lede" data-r style="margin-top:2.4vh">Entropiya tizim tartibsizligining o‘lchovidir. Shu sababli organizmning tartibliligi <b>atrof-muhit tartibliligining kamayishi</b> hisobiga saqlanadi.</p>
+      <div class="eqs" data-r><span class="f" style="color:var(--gold)">dS = dS<sub>i</sub> + dS<sub>e</sub></span></div>
+      <div class="terms" data-r style="margin-top:2vh">
+        <div><span>dS<sub>i</sub></span><span>tizimdagi qaytmas jarayonlar bilan bog‘liq entropiyaning o‘zgarishi</span></div>
+        <div><span>dS<sub>e</sub></span><span>tashqi muhit jismlari bilan ta’sirlashuv tufayli yuzaga kelgan entropiyaning o‘zgarishi</span></div>
       </div>
     </div>
     <div>
       <canvas id="ent" class="glass" data-r></canvas>
-      <div class="quote" data-r>«Organizm manfiy entropiya bilan oziqlanadi.»<small>Ervin Shryodinger · «Hayot nima?» · 1944</small></div>
+      <div class="quote" data-r style="font-size:clamp(20px,1.8vw,34px)">«Tirik organizmlar tashqi energiya manbalaridan foydalanib, entropiya ortishini kamaytirishga harakat qiladi.»<small>Shryodinger, «Hayot nima?» (1944) — Choriyeva M.S. talqinida</small></div>
     </div>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 6.2–6.3-§, (6.10) · Choriyeva M.S. Synapses, 2025, 2(2)</div>
 </section>
 
 <!-- 09 WORK -->
 <section class="slide" data-mode=".95" data-glow=".7" data-t="37.4" data-name="Ish bajarish usullari">
   <div class="kick" data-r>Erkin energiya manbalari va ularning ish bajarish usullari</div>
-  <h2 data-r>ATF beshta <em>ishga</em> sarflanadi</h2>
+  <h2 data-r>Ish bajarish <em>usullari</em></h2>
   <div class="work">
-    <div class="card glass" data-r><svg viewBox="0 0 48 48"><path d="M6 30c6-14 12-14 18 0s12 14 18 0"/><path d="M6 18c6-10 12-10 18 0s12 10 18 0" opacity=".5"/></svg><h4>Mexanik</h4><p>Mushak qisqarishi: aktin–miozin ko‘prikchalari, kiprikchalar, xivchinlar.</p><div class="k">FIK ≈ 20–25%</div></div>
-    <div class="card glass" data-r><svg viewBox="0 0 48 48"><circle cx="14" cy="24" r="6"/><circle cx="34" cy="14" r="6"/><circle cx="34" cy="34" r="6"/><path d="M19 21l10-5M19 27l10 5"/></svg><h4>Kimyoviy</h4><p>Biosintez: oqsil, nuklein kislotalar, glikogen va lipidlar sintezi.</p><div class="k">ΔG &gt; 0 jarayonlar</div></div>
-    <div class="card glass" data-r><svg viewBox="0 0 48 48"><path d="M24 4v40"/><circle cx="12" cy="14" r="2.5"/><circle cx="10" cy="26" r="2.5"/><circle cx="14" cy="36" r="2.5"/><circle cx="36" cy="20" r="2.5"/><path d="M18 24h12m-4-4 4 4-4 4"/></svg><h4>Osmotik</h4><p>Konsentratsiya gradientiga qarshi faol transport. Na⁺/K⁺-nasos.</p><div class="k">3Na⁺ ↑ · 2K⁺ ↓ · 1 ATF</div></div>
-    <div class="card glass" data-r><svg viewBox="0 0 48 48"><path d="M27 4 12 27h11l-3 17 16-24H25z"/></svg><h4>Elektr</h4><p>Membrana potensialini hosil qilish va nerv impulsini o‘tkazish.</p><div class="k">φ<sub>tinch</sub> ≈ −70 mV</div></div>
-    <div class="card glass" data-r><svg viewBox="0 0 48 48"><path d="M16 40c-6-8 4-12 0-22M26 40c-6-8 4-14 0-26M36 40c-6-8 4-12 0-22"/></svg><h4>Issiqlik</h4><p>Barcha jarayonlarning yakuniy mahsuloti; tana haroratini ushlab turadi.</p><div class="k">qaytmas yo‘qotish</div></div>
+    <div class="card glass" data-r><svg viewBox="0 0 48 48"><path d="M6 24h30m-6-6 6 6-6 6"/><path d="M16 38c-3-4 2-6 0-11M24 38c-3-4 2-7 0-12" opacity=".6"/></svg><h4>Ish va issiqlik</h4><p>Energiya bir jismdan ikkinchi jismga ikki xil usulda o‘tadi: ish bajarganda va issiqlik almashganda.</p></div>
+    <div class="card glass" data-r><svg viewBox="0 0 48 48"><circle cx="14" cy="24" r="6"/><circle cx="34" cy="14" r="6"/><circle cx="34" cy="34" r="6"/><path d="M19 21l10-5M19 27l10 5"/></svg><h4>Zahira</h4><p>Tanada energiyaning yarmi mikroenergetik bog‘lanishlarda to‘planadi va hayotiy zarur ishlar bajariladi (yurak ishi, muskullar ishi).</p><div class="k">50%</div></div>
+    <div class="card glass" data-r><svg viewBox="0 0 48 48"><path d="M6 30c6-14 12-14 18 0s12 14 18 0"/><path d="M6 18c6-10 12-10 18 0s12 10 18 0" opacity=".5"/></svg><h4>Mexanik ish</h4><p>Ishchi yurish davomida miozin ko‘prigi ATF gidrolizining erkin energiyasini mexanik ishga aylantiradi.</p></div>
+    <div class="card glass" data-r><svg viewBox="0 0 48 48"><path d="M16 40c-6-8 4-12 0-22M26 40c-6-8 4-14 0-26M36 40c-6-8 4-12 0-22"/></svg><h4>Birlamchi issiqlik</h4><p>Issiqlik birlamchi (asosiy) va ikkilamchi (aktiv) bo‘ladi. Birinchisi oziq-ovqat hazm bo‘lishi bilan ajraladi va organizmni isitishga sarf bo‘ladi.</p></div>
+    <div class="card glass" data-r><svg viewBox="0 0 48 48"><path d="M27 4 12 27h11l-3 17 16-24H25z"/></svg><h4>Patologiyada</h4><p>Mikroenergetik bog‘lanishlar hosil bo‘lishi susayadi, birlamchi issiqlik sarfi oshadi — bu tana haroratining oshuviga olib keladi.</p></div>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 2-bob (muskul qisqarishi), 6.1-§, 6.6-§</div>
 </section>
 
 <!-- 10 HEAT BALANCE -->
@@ -464,27 +475,30 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
   <div class="cols">
     <div>
       <div class="kick" data-r>Issiqlik balansi tenglamasi</div>
-      <h2 data-r>Kirim = <em>chiqim</em></h2>
-      <div class="eqs" data-r><span class="f" style="font-size:clamp(26px,2.6vw,50px)">Q<sub>m</sub> = Q<sub>r</sub> + Q<sub>b</sub> + Q<sub>kv</sub> + Q<sub>k</sub> ± ΔQ</span></div>
-      <p class="lede" data-r style="margin-top:2.4vh">Metabolizm issiqligi Q<sub>m</sub> tashqariga to‘rt yo‘l bilan chiqadi. ΔQ = 0 bo‘lsa, tana harorati doimiy — <b>gomoyotermiya</b>.</p>
+      <h2 data-r>Issiqlik <em>balansi</em></h2>
+      <div class="eqs" data-r><span class="f" style="font-size:clamp(28px,2.8vw,54px)">Q<sub>hosil</sub> = Q<sub>yo‘qotish</sub></span></div>
+      <p class="lede" data-r style="margin-top:2.4vh">Parrandalar va sutemizuvchilar tana haroratini doimiy saqlashi uchun <b>issiqlik yo‘qotish issiqlik hosil bo‘lishiga teng</b> bo‘lishi kerak. Organizmda buni aniqlovchi to‘rt xil mexanizm mavjud:</p>
       <div class="legend" data-r>
-        <div><i style="background:#ffcf5c"></i><span>Nurlanish</span><b>60%</b><span>P = εσS(T₁⁴ − T₂⁴)</span></div>
-        <div><i style="background:#ff6a1a"></i><span>Bug‘lanish</span><b>22%</b><span>1 g ter ≈ 2,4 kJ olib ketadi</span></div>
-        <div><i style="background:#e0267f"></i><span>Konveksiya</span><b>15%</b><span>havo oqimi bilan</span></div>
-        <div><i style="background:#8a3cff"></i><span>Issiqlik o‘tkazuvchanlik</span><b>3%</b><span>tegib turgan jismlarga</span></div>
+        <div><i style="background:#8a3cff"></i><span>O‘tkazuvchanlik</span><b>λ</b><span>to‘qimalar issiqlik o‘tkazuvchanligi turlicha</span></div>
+        <div><i style="background:#e0267f"></i><span>Konveksiya</span><b>Q</b><span>Q = L(T<sub>yu</sub> − T<sub>y</sub>)</span></div>
+        <div><i style="background:#ffcf5c"></i><span>Nurlanish</span><b>50–60%</b><span>issiqqonli hayvonlarda issiqlik uzatish</span></div>
+        <div><i style="background:#ff6a1a"></i><span>Bug‘lanish</span><b>30%</b><span>nafas 0,35 kg + ter 0,5 kg suv sutkasiga</span></div>
       </div>
     </div>
-    <div class="donut" data-r>
-      <svg viewBox="0 0 42 42">
-        <circle cx="21" cy="21" r="15.915" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="4"/>
-        <circle class="seg" cx="21" cy="21" r="15.915" stroke="#ffcf5c" style="--len:59.4;--k:0" pathLength="100"/>
-        <circle class="seg" cx="21" cy="21" r="15.915" stroke="#ff6a1a" style="--len:21.4;--k:1" pathLength="100" stroke-dashoffset="-60"/>
-        <circle class="seg" cx="21" cy="21" r="15.915" stroke="#e0267f" style="--len:14.4;--k:2" pathLength="100" stroke-dashoffset="-82"/>
-        <circle class="seg" cx="21" cy="21" r="15.915" stroke="#8a3cff" style="--len:2.4;--k:3" pathLength="100" stroke-dashoffset="-97"/>
-      </svg>
-      <div class="mid"><div class="tag">tinch holatda</div><div class="big"><span data-count="7100" data-dec="0">0</span></div><div class="tag">kJ / sutka · 70 kg</div></div>
+    <div class="lam glass" data-r>
+      <div class="tag">6.3-jadval · Issiqlik o‘tkazuvchanlik koeffitsiyenti, W/(m·K)</div>
+      <div class="bars">
+        <div class="b" style="--k:0"><span>Quruq havo</span><span class="t"><i style="--w:4%"></i></span><span>0,024</span></div>
+        <div class="b" style="--k:1"><span>Jun mato</span><span class="t"><i style="--w:4%"></i></span><span>0,025</span></div>
+        <div class="b" style="--k:2"><span>Yog‘ to‘qimasi</span><span class="t"><i style="--w:33%"></i></span><span>0,17–0,21</span></div>
+        <div class="b" style="--k:3"><span>Epidermis</span><span class="t"><i style="--w:43%"></i></span><span>0,25</span></div>
+        <div class="b" style="--k:4"><span>Muskul</span><span class="t"><i style="--w:85%"></i></span><span>0,50</span></div>
+        <div class="b" style="--k:5"><span>Suv</span><span class="t"><i style="--w:100%"></i></span><span>0,585</span></div>
+      </div>
+      <p class="lede" style="font-size:clamp(12px,.9vw,15px);margin-top:2.4vh">Eng yaxshi issiqlik o‘tkazuvchanlikka muskul to‘qimalari ega va ichki a’zolardan tashqariga issiqlikni tezda chiqaradi. Tashqi muhit harorati past bo‘lganda yog‘ to‘qimalari issiqlikning chiqib ketishiga to‘sqinlik qiladi.</p>
     </div>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 6.5-§, 6.3-jadval, (6.13)</div>
 </section>
 
 <!-- 11 PRIGOGINE -->
@@ -492,14 +506,14 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
   <div class="cols" style="grid-template-columns:1fr 1.15fr">
     <div>
       <div class="kick" data-r>Prigojin teoremasi</div>
-      <h2 data-r>Minimal <em>isrof</em> holati</h2>
-      <p class="lede" data-r style="margin-top:3vh">Muvozanatga yaqin <b>statsionar holatda</b> ochiq tizimda entropiya hosil bo‘lish tezligi <b>minimal</b> qiymatga ega bo‘ladi va tizim o‘z-o‘zidan shu holatga intiladi.</p>
-      <div class="eqs" data-r><span class="f">σ = d<sub>i</sub>S/dt → min</span><span class="f" style="color:var(--gold)">dσ/dt ≤ 0</span></div>
+      <h2 data-r>Prigojin <em>teoremasi</em></h2>
+      <p class="lede" data-r style="margin-top:3vh">Prigojin <b>turg‘un holat uchun entropiyaning minimumi hosil bo‘lish prinsipini</b> ta’riflab, ayrim funksiyalarning ekstremal qiymatlarini ko‘rsatdi.</p>
+      <div class="eqs" data-r><span class="f">dS/dt = dS<sub>i</sub>/dt + dS<sub>e</sub>/dt</span></div>
+      <div class="eqs" data-r style="margin-top:1.4vh"><span class="f" style="color:var(--gold)">S = const,&nbsp; dS/dt = 0</span></div>
       <div class="terms" data-r>
-        <div><span>⟶</span><span>Organizm o‘sgan va qarigan sari birlik massaga to‘g‘ri keladigan issiqlik ajralishi kamayadi.</span></div>
-        <div><span>⟶</span><span>Statsionar holatdan chetlashsa (kasallik, stress), σ ortadi — keyin yana minimumga qaytadi.</span></div>
+        <div><span>⟶</span><span>Organizm atrof-muhit entropiyasi ortib boradi, ammo organizmning entropiyasi o‘zgarmas saqlanib qoladi.</span></div>
+        <div><span>⟶</span><span>Ayrim kasalliklarda biologik tizimlar entropiyasi oshishi mumkin (dS &gt; 0). Masalan, rak kasalliklarida hujayralarning tartibsiz ko‘payib ketishi yuz beradi.</span></div>
       </div>
-      <div class="chip" data-r style="margin-top:3vh"><i></i>Ilya Prigojin · Nobel mukofoti, kimyo · 1977</div>
     </div>
     <div class="graph glass" data-r style="padding:3vh 2vw">
       <svg viewBox="0 0 760 400">
@@ -510,25 +524,26 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
         <path class="draw" pathLength="1" d="M60 40 C 140 230, 260 300, 420 318 S 640 330, 700 330 L700 360 L60 360Z" fill="url(#pg)" opacity=".07" stroke="none"/>
         <circle class="rider" r="7" fill="#fff" style="filter:drop-shadow(0 0 10px #ff6a1a)"/>
         <g font-family="Geist Mono" font-size="13" fill="rgba(246,239,232,.6)">
-          <text x="20" y="30">σ</text><text x="700" y="385">t</text>
-          <text x="470" y="312" fill="#7fdcff">σ<tspan font-size="10">min</tspan> — statsionar holat</text>
-          <text x="96" y="90">tashqi taʼsir / rivojlanish</text>
+          <text x="10" y="30">dSᵢ/dt</text><text x="700" y="385">t</text>
+          <text x="470" y="312" fill="#7fdcff">min — turg‘un holat</text>
+          <text x="96" y="90">sxema</text>
         </g>
       </svg>
     </div>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 6.3-§, (6.11), (6.12)</div>
 </section>
 
 <!-- 12 ENERGY TYPES -->
 <section class="slide" data-mode=".9" data-glow=".65" data-t="36.6" data-name="Energiya turlari">
   <div class="cols">
     <div>
-      <div class="kick" data-r>Organizm va aʼzo hujayralarida energiya turlari</div>
-      <h2 data-r>Bir <em>valyuta</em>, ko‘p ayirboshlash</h2>
+      <div class="kick" data-r>Organizm va a’zo xujayralarida energiya turlari</div>
+      <h2 data-r>Energiya <em>almashinuvi</em></h2>
       <div class="rules">
-        <p data-r><span>Energiya turlari bevosita emas, <b>juftlashgan reaksiyalar</b> orqali almashadi: oraliq «valyuta» — ATF yoki membranadagi ion gradienti.</span></p>
-        <p data-r><span><b>Xemiosmotik nazariya</b> (P. Mitchell, 1961): mitoxondriyada oksidlanish energiyasi avval H⁺ gradientiga (Δμ<sub>H⁺</sub> ≈ 200 mV), so‘ng ATF ga aylanadi.</span></p>
-        <p data-r><span>Har bir o‘tishda erkin energiyaning bir qismi <b>issiqlikka</b> aylanadi — FIK hech qachon 100% bo‘lmaydi (II qonun).</span></p>
+        <p data-r><span>Organizmda moddalar almashinuvi <b>energiyaning bir turdan ikkinchi turga o‘tish</b> jarayonlari bilan birga davom etadi.</span></p>
+        <p data-r><span>Tirik organizm oziq moddalarning kimyoviy energiyasini sarflaydi va uni barcha ish jarayonlari energiyasiga aylantirib, <b>ortiqcha issiqlikni tashqariga chiqaradi</b>.</span></p>
+        <p data-r><span>6.4-jadval: hamma energiyalarning <b>issiqlik energiyasiga o‘tishi</b> hamma to‘qima va hujayralarda yuz beradi.</span></p>
       </div>
     </div>
     <div class="ring" data-r>
@@ -540,64 +555,70 @@ kbd{font:500 11px var(--mono);padding:4px 7px;border:1px solid var(--line);borde
         <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(246,239,232,.1)" stroke-width=".25"/>
       </svg>
       <div class="core"><b>ATF</b><span>kimyoviy</span></div>
-      <div class="e" style="left:50%;top:8%"><div class="d"></div><b>Mexanik</b><span>mushak, sitoskelet</span></div>
-      <div class="e" style="left:86.4%;top:29%"><div class="d"></div><b>Elektr</b><span>membrana, nerv</span></div>
-      <div class="e" style="left:86.4%;top:71%"><div class="d"></div><b>Osmotik</b><span>ion gradientlari</span></div>
-      <div class="e" style="left:50%;top:92%"><div class="d" style="background:#ff6a1a"></div><b>Issiqlik</b><span>yakuniy chiqish</span></div>
-      <div class="e" style="left:13.6%;top:71%"><div class="d"></div><b>Yorug‘lik</b><span>ko‘rish, bioluminessensiya</span></div>
-      <div class="e" style="left:13.6%;top:29%"><div class="d"></div><b>Kimyoviy</b><span>biosintez</span></div>
+      <div class="e" style="left:50%;top:8%"><div class="d"></div><b>→ Mexanik</b><span>muskul to‘qimasida</span></div>
+      <div class="e" style="left:86.4%;top:29%"><div class="d"></div><b>→ Elektr</b><span>hamma to‘qimalarda</span></div>
+      <div class="e" style="left:86.4%;top:71%"><div class="d"></div><b>→ Yorug‘lik</b><span>hasharotlar va baliqlar terisida</span></div>
+      <div class="e" style="left:50%;top:92%"><div class="d" style="background:#ff6a1a"></div><b>→ Issiqlik</b><span>hamma to‘qima va hujayralarda</span></div>
+      <div class="e" style="left:13.6%;top:71%"><div class="d"></div><b>Akustik → elektr</b><span>Korti organida</span></div>
+      <div class="e" style="left:13.6%;top:29%"><div class="d"></div><b>Yorug‘lik →</b><span>fotoretseptorlarda, fotosintezda</span></div>
     </div>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 6.1-§, 6.4-jadval «Tirik organizmda energiya almashinuvi»</div>
 </section>
 
 <!-- 13 HOT THERAPY -->
-<section class="slide hot" data-mode="1" data-glow="1.15" data-t="62.0" data-name="Issiq muolajalar">
+<section class="slide hot" data-mode="1" data-glow="1.15" data-t="85.0" data-name="Issiq muolajalar">
   <div class="cols" style="grid-template-columns:1fr auto;align-items:end">
-    <div><div class="kick" data-r>02 · Termoterapiya</div><h2 data-r>Issiqlik — <em>dori</em> sifatida</h2></div>
-    <p class="lede" data-r style="max-width:36ch">To‘qima qiziydi → tomirlar kengayadi, qon oqimi va moddalar almashinuvi kuchayadi, spazm va og‘riq kamayadi.</p>
+    <div><div class="kick" data-r>02 · Issiq muhitlar bilan davolash</div><h2 data-r>Issiq <em>muhitlar</em></h2></div>
+    <p class="lede" data-r style="max-width:44ch">Organizmga asta-sekin qo‘shimcha issiqlik berish bilan bir qancha kasalliklarni davolash mumkin. Buning uchun <b>issiqlikni to‘plab, so‘ng asta-sekin beradigan</b> materiallardan foydalaniladi.</p>
   </div>
-  <div class="thx">
-    <div class="card glass" data-r><div class="deg">55–65<small>°C</small></div><h4>Parafin</h4><p>Issiqlik sig‘imi katta, o‘tkazuvchanligi kichik — kuydirmaydi. Qotishda yashirin erish issiqligini ham beradi: Q = cmΔT + λm.</p></div>
-    <div class="card glass" data-r><div class="deg">45–50<small>°C</small></div><h4>Ozokerit</h4><p>Tabiiy «tog‘ mumi». Issiqlikni sekin beradi, qotishda biroz siqib, to‘qimani bosim bilan ham taʼsirlaydi.</p></div>
-    <div class="card glass" data-r><div class="deg">38–44<small>°C</small></div><h4>Peloid (loy)</h4><p>Davolovchi balchiq: issiqlik, kimyoviy va mexanik taʼsir birgalikda.</p></div>
-    <div class="card glass" data-r><div class="deg">ichki</div><h4>Diatermiya · UYuCh</h4><p>Yuqori chastotali tok yoki maydon chuqur to‘qimalarni <b>ichidan</b> qizdiradi; infraqizil nur esa yuza qatlamlarni.</p></div>
+  <div class="thx" style="grid-template-columns:repeat(5,1fr)">
+    <div class="card glass" data-r><div class="tag">c, kJ/(kg·K)</div><div class="deg">4,19</div><h4>Suv</h4><p>λ = 0,58 W/(m·K). Katta solishtirma issiqlik sig‘imi — vanna qabul qilish.</p></div>
+    <div class="card glass" data-r><div class="tag">c, kJ/(kg·K)</div><div class="deg">3,23</div><h4>Parafin</h4><p>λ = 0,23 W/(m·K)</p></div>
+    <div class="card glass" data-r><div class="tag">c, kJ/(kg·K)</div><div class="deg">3,35</div><h4>Ozokerit</h4><p>λ = 0,15 W/(m·K)</p></div>
+    <div class="card glass" data-r><div class="tag">c, kJ/(kg·K)</div><div class="deg">3,85</div><h4>Torf</h4><p>λ = 0,42 W/(m·K)</p></div>
+    <div class="card glass" data-r><div class="tag">c, kJ/(kg·K)</div><div class="deg">2,09</div><h4>Loyqa</h4><p>λ = 0,70 W/(m·K). Tarkibidagi foydali elementlar teri orqali kiradi.</p></div>
   </div>
-  <div class="effects">
-    <span class="chip" data-r><i></i>vazodilatatsiya</span><span class="chip" data-r><i></i>metabolizm ↑</span><span class="chip" data-r><i></i>so‘rilish ↑</span><span class="chip" data-r><i></i>spazm ↓</span>
+  <div class="cols" style="grid-template-columns:1fr 1fr;gap:3vw;margin-top:3vh;align-items:start">
+    <p class="lede" data-r style="font-size:clamp(13px,1vw,17px);max-width:none">Parafin va ozokerit <b>85 °C gacha</b> isitilishi mumkin va u tanani kuydirmaydi, chunki tanaga tekkan qismi tezda <b>45 °C gacha</b> soviydi, issiqlik o‘tkazuvchanligi yomonligi sababli ichki qismlar harorati saqlanib, asta-sekin tanaga beriladi.</p>
+    <p class="lede" data-r style="font-size:clamp(13px,1vw,17px);max-width:none">Torf va loyqa bilan davolashda nafaqat issiqlik ta’siri, balki <b>mexanik ta’sir</b> ham mavjud. Issiqlik ta’sirida ter chiqishi oshadi va organizmdan zaharli moddalarning chiqib ketishini ta’minlaydi.</p>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 6.4-§, 6.2-jadval (c, kJ/(kg·K); λ, W/(m·K))</div>
 </section>
 
 <!-- 14 COLD THERAPY -->
-<section class="slide cold" data-mode="0" data-glow=".9" data-t="-196" data-name="Sovuq muolajalar">
+<section class="slide cold" data-mode="0" data-glow=".9" data-t="2.0" data-name="Sovuq muolajalar">
   <div class="cols" style="grid-template-columns:1fr auto;align-items:end">
-    <div><div class="kick" data-r>02 · Krioterapiya</div><h2 data-r>Sovuq — <em>tormoz</em> sifatida</h2></div>
-    <div data-r style="text-align:right"><div class="tag">suyuq azot</div><div class="big" style="color:var(--ice)">−<span data-count="196" data-dec="0">0</span><small style="font-size:.3em">°C</small></div></div>
+    <div><div class="kick" data-r>02 · Krioterapiya</div><h2 data-r>Sovuq <em>muhitlar</em></h2></div>
+    <p class="lede" data-r style="max-width:44ch">Krioterapiya — sovuq bilan davolash; biror a’zoni <b>muzlatmaydigan darajada sovitish</b>. U og‘riq qoldirish, yallig‘lanishni kamaytirish, qon to‘xtatish va shishni yo‘qotish chorasi hisoblanadi.</p>
   </div>
   <div class="thx">
-    <div class="card glass" data-r><div class="deg">0…+4<small>°C</small></div><h4>Mahalliy sovuq</h4><p>Muz, sovuq kompress: tomirlar torayadi, shish, qon ketish va og‘riq kamayadi.</p></div>
-    <div class="card glass" data-r><div class="deg">−110…−160<small>°C</small></div><h4>Umumiy krioterapiya</h4><p>Kriokamera, 1–3 daqiqa. Qisqa zarb — yallig‘lanish va og‘riqqa qarshi taʼsir.</p></div>
-    <div class="card glass" data-r><div class="deg">−196<small>°C</small></div><h4>Kriodestruksiya</h4><p>Suyuq azot hujayra ichida muz kristallarini hosil qilib, so‘gal va o‘sma to‘qimasini yemiradi.</p></div>
-    <div class="card glass" data-r><div class="deg">28–32<small>°C</small></div><h4>Sunʼiy gipotermiya</h4><p>Yurak va miya operatsiyalarida: Q₁₀ ≈ 2–3, harorat 10° pasaysa metabolizm va O₂ ehtiyoji 2–3 marta kamayadi.</p></div>
+    <div class="card glass" data-r><div class="deg">01</div><h4>Muzli xalta</h4><p>A’zolar yallig‘langanda, badan lat yeganda, suyak singanda, qon ketganda tegishli sohaga muzli xalta qo‘yiladi.</p></div>
+    <div class="card glass" data-r><div class="deg">02</div><h4>Gipotermiya</h4><p>Gavda temperaturasini sun’iy yo‘l bilan tushirish yurak, yirik tomirlar, bosh miyani operatsiya qilishda tatbiq etiladi.</p></div>
+    <div class="card glass" data-r><div class="deg">03</div><h4>Krioxirurgiya</h4><p>Kasal a’zo yoki to‘qimalar sovitish yo‘li bilan yemiriladi yoki olib tashlanadi. Xloretil yoki kriogen asbob ishlatiladi.</p></div>
+    <div class="card glass" data-r><div class="deg">04</div><h4>Konservatsiya</h4><p>Past harorat tibbiyotda tana ayrim qismlarini uzoq vaqt konservatsiya qilish uchun ishlatiladi.</p></div>
   </div>
   <div class="effects">
-    <span class="chip" data-r><i></i>vazokonstriksiya</span><span class="chip" data-r><i></i>metabolizm ↓</span><span class="chip" data-r><i></i>shish ↓</span><span class="chip" data-r><i></i>og‘riq ↓</span>
+    <span class="chip" data-r><i></i>og‘riq qoldirish</span><span class="chip" data-r><i></i>yallig‘lanishni kamaytirish</span><span class="chip" data-r><i></i>qon to‘xtatish</span><span class="chip" data-r><i></i>shishni yo‘qotish</span>
   </div>
+  <div class="src">O‘zME (uz.wikipedia): «Krioterapiya» · Ismailov E. va b. «Biofizika», 2013 — 6.4-§</div>
 </section>
 
 <!-- 15 FINAL -->
 <section class="slide fin" data-mode="1" data-glow=".85" data-t="36.6" data-name="Xulosa">
   <div class="kick" data-r>Xulosa</div>
-  <h2 data-r>Hayot — entropiyaga qarshi <em>doimiy ish</em>.</h2>
+  <h2 data-r style="font-size:clamp(44px,5.6vw,108px)">Energiya va moddalar almashinuvi hayot faoliyatining asosida yotgan <em>yagona jarayondir</em>.</h2>
   <div class="take">
-    <div data-r><b>I qonun</b>Organizm energiyani yaratmaydi — oziqdagi energiyani aylantiradi.</div>
-    <div data-r><b>II qonun</b>Tartib entropiyani tashqariga chiqarish evaziga saqlanadi.</div>
-    <div data-r><b>Prigojin</b>Statsionar holatda entropiya hosil bo‘lishi minimal.</div>
-    <div data-r><b>Tibbiyot</b>Issiq tezlashtiradi, sovuq sekinlashtiradi — ikkalasi ham davolaydi.</div>
+    <div data-r><b>I qonun</b>Tizimga berilgan issiqlik ichki energiya o‘zgarishiga va bajariladigan ishga ketadi.</div>
+    <div data-r><b>II qonun</b>Organizmning tartibliligi atrof-muhit tartibliligining kamayishi hisobiga saqlanadi.</div>
+    <div data-r><b>Prigojin</b>Turg‘un holat uchun entropiyaning minimumi hosil bo‘lish prinsipi.</div>
+    <div data-r><b>Tibbiyot</b>Teri issiqlik almashishda (70%) asosiy rol o‘ynaydi — unga issiq yoki sovuq bilan ta’sir qilib, issiqlik almashinishni boshqarish mumkin.</div>
   </div>
   <div class="row">
-    <div class="chip" data-r><i></i>Adabiyot · AA: 1, 2, 3 · QA: 1, 3, 4</div>
+    <div class="chip" data-r><i></i>Ismailov E., Mamatqulov N., Xodjayev G‘., Norboyev N. Biofizika: darslik. T.: Cho‘lpon NMIU, 2013</div>
     <div class="f" data-r style="color:var(--gold)">Savollar?</div>
   </div>
+  <div class="src">Ismailov E. va b. «Biofizika», 2013 — 6.1-§, 6.3-§, 6.4-§</div>
 </section>
 
 </main>
@@ -711,9 +732,9 @@ function entDraw(t) {
   }
   const d = devicePixelRatio;
   ec.font = `500 ${11 * d}px "Geist Mono", monospace`; ec.textAlign = 'left';
-  ec.fillStyle = '#7fdcff'; ec.fillText('● tartibli oziq kiradi', 18 * d, 26 * d);
-  ec.fillStyle = '#e0267f'; ec.fillText('● issiqlik va chiqindi chiqadi  (dₑS < 0)', 18 * d, 46 * d);
-  ec.fillStyle = '#ffcf5c'; ec.fillText('● ichki tartib saqlanadi', 18 * d, 66 * d);
+  ec.fillStyle = '#7fdcff'; ec.fillText('● modda va energiya kirishi', 18 * d, 26 * d);
+  ec.fillStyle = '#e0267f'; ec.fillText('● dSₑ < 0', 18 * d, 46 * d);
+  ec.fillStyle = '#ffcf5c'; ec.fillText('● S = const (turg‘un holat)', 18 * d, 66 * d);
 }
 
 // ---------- counters ----------
@@ -740,10 +761,10 @@ function go(n) {
   $('ttl').textContent = s.dataset.name;
   $('prog').style.width = ((n + 1) / slides.length * 100) + '%';
   dots.forEach((d, i) => d.classList.toggle('on', i === n));
-  const cold = temp < 0; $('scale').classList.toggle('cold', cold);
-  $('smax').textContent = cold ? '0°' : (temp > 50 ? '70°' : '40°');
-  $('smid').textContent = cold ? '−100°' : (temp > 50 ? '45°' : '30°');
-  $('smin').textContent = cold ? '−200°' : '20°';
+  const cold = T.mode === 0; $('scale').classList.toggle('cold', cold);
+  $('smax').textContent = cold ? '10°' : (temp > 50 ? '90°' : '40°');
+  $('smid').textContent = cold ? '5°' : (temp > 50 ? '55°' : '30°');
+  $('smin').textContent = cold ? '0°' : '20°';
   count(s);
   if (s.dataset.hook === 'ent') entInit();
   history.replaceState(null, '', '#' + (n + 1));
